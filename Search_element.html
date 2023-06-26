@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Element in Array</title>
+    <script>
+      // let data = [92,97,95,91,74,39,29,28,39,49];
+      // let SearchItem = 49;
+      // let index = undefined;
+      // for(let i=0; i<=data.length-1; i++){
+      //     if(data[i]==SearchItem){
+      //         index = i;
+      //         break;
+      //     }
+      // }
+      // console.log(index);
+
+      // 🔘 Search Element With Text and Input 🔘
+
+      function SearchElement() {
+        let data = [92, 97, 95, 91, 74, 39, 29, 28, 39, 49];
+        let SearchItem = document.getElementById('SearchEl').value;
+        let index = undefined;
+        for (let i = 0; i <= data.length - 1; i++) {
+          if (data[i] == parseInt(SearchItem)) {
+            index = i;
+            break;
+          }
+        }
+        console.log(index);
+        document.write(index);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter value" id="SearchEl">
+    <button onclick="SearchElement()" > Search Element </button>
+  </body>
+</html>
