@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LCM For Three Numbers</title>
+    <script>
+      // var a = 20;
+      // var b = 25;
+      // var c = 30;
+      // for(var i=1; i<= a*b*c; i++ ){
+      //     if(i%a == 0  && i%b == 0 && i%c == 0){
+      //         break;
+      //     }
+      // }
+      // document.write("LCM IS ="+ i);
+
+      // ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ 🔘 LCM From User Input For Three Numbers 🔘 ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠
+      function LCMis() {
+        var a = document.getElementById("FirstNumber").value;
+        var b = document.getElementById("SecondNumber").value;
+        var c = document.getElementById("ThirdNumber").value;
+    
+        for (var i = 1; i <= a * b * c; i++) {
+          if (i % a == 0 && i % b == 0 && i % c == 0) {
+            break;
+          }
+        }
+        document.write("LCM IS =" + i);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="FirstNumber" placeholder="Enter First Number" />
+    <input type="text" id="SecondNumber" placeholder="Enter Second Number " />
+    <input type="text" id="ThirdNumber" placeholder="Enter Third Number" />
+    <button onclick="LCMis()">Find LCM</button>
+  </body>
+</html>
